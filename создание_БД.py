@@ -1,6 +1,5 @@
 
 import pymysql
-
 try:
     connection = pymysql.connect(
         host='127.0.0.1',
@@ -16,7 +15,7 @@ try:
     try:
         # create table
         with connection.cursor() as cursor:
-            create_table_query = "CREATE DATABASE my_db_test"
+            create_table_query = "CREATE DATABASE TEST_300"
             cursor.execute(create_table_query)
             print("Table created successfully")
 

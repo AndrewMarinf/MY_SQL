@@ -7,7 +7,7 @@ try:
         port=3306,
         user='root',
         password='9945',
-        database='sys',
+        database='TEST_300',
         cursorclass=pymysql.cursors.DictCursor
     )
     print("successfully connected...")
@@ -16,7 +16,7 @@ try:
     try:
         # create table
         with connection.cursor() as cursor:
-            create_table_query = "CREATE TABLE `users`(id int AUTO_INCREMENT," \
+            create_table_query = "CREATE TABLE `Clients`(id int AUTO_INCREMENT," \
                             " name varchar(32)," \
                             " password varchar(32)," \
                             " email varchar(32), PRIMARY KEY (id));"

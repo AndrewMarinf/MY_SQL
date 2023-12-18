@@ -9,9 +9,11 @@ def generate_random_person():
     last_name = random.choice(last_names)    # Выбираем случайную фамилию из списка last_names
     first_name = random.choice(first_names)  # Выбираем случайное имя из списка first_names
     patronymic_name = random.choice(patronymic_names)  # Выбираем случайное отчество из списка patronymic_names
-    return (last_name, first_name , patronymic_name)  # Возвращаем кортеж значений
+    full_name = last_name + ' ' + first_name + ' ' + patronymic_name
+    return full_name  # Возвращаем кортеж значений
 
-# # Генерируем и печатаем 25 случайных персон
+
+# Генерируем и печатаем 25 случайных персон
 # for _ in range(26):
 #     person = generate_random_person()
-#     print(*person)
+#     print(*person) 

@@ -16,18 +16,18 @@ try:
         with connection.cursor() as cursor:
             create_table_queries = [
                 "CREATE TABLE Bicycle(ID int PRIMARY KEY AUTO_INCREMENT, "
-                "Brand varchar(20) not null, "
+                "Brand varchar(50) not null, "
                 "password varchar(32), "
-                "RentPrice int not null);",
+                "RentPrice float not null);",
 
                 "CREATE TABLE Client(ID int PRIMARY KEY AUTO_INCREMENT, "
-                "Name varchar(10) not null, "
-                "Passport varchar(50) not null, "
-                "Country varchar(50) not null);",
+                "Name varchar(20) not null, "
+                "Passport varchar(12) not null, "
+                "Country varchar(70) not null);",
                 
                 "CREATE TABLE RentBook( ID int PRIMARY KEY AUTO_INCREMENT, "
                 "Date date not null, "
-                "Time int not null, "
+                "Time float not null, "
                 "Paid bit not null, "
                 "BicycleID int not null, "
                 "ClientID int not null, "
