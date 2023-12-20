@@ -25,3 +25,30 @@ try:
 except Exception as ex:
     print("Connection refused...")
     print(ex)
+
+
+
+# CREATE TABLE Client_ (
+# id SERIAL PRIMARY KEY,
+# name VARCHAR(255)
+# );
+
+# CREATE TABLE Orders_ (
+# id SERIAL PRIMARY KEY,
+# client_id_ INTEGER,
+# price NUMERIC(10,2),
+# FOREIGN KEY (client_id_) REFERENCES Client_(id)
+# );
+
+# INSERT INTO Client_ (name) VALUES ('John Doe');
+# INSERT INTO Client_ (name) VALUES ('Jane Smith');
+# INSERT INTO Client_ (name) VALUES ('Mark Johnson');
+# INSERT INTO Client_(name) VALUES ('Sarah Wilson');
+# INSERT INTO Client_ (name) VALUES ('Michael Brown');
+
+# INSERT INTO Orders_ (client_id_, price) VALUES (1, 100.00);
+# INSERT INTO Orders_ (client_id_, price) VALUES (1, 200.00);
+# INSERT INTO Orders_ (client_id_, price) VALUES (2, 150.00);
+# INSERT INTO Orders_ (client_id_, price) VALUES (3, 75.50);
+# INSERT INTO Orders_ (client_id_, price) VALUES (5, 300.00);    
+
